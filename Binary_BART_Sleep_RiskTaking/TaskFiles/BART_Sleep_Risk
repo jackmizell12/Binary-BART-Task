@@ -1,0 +1,1443 @@
+var timeline = [];
+
+      var Welcome_screen = {
+         type: 'html-button-response',
+         stimulus: '<p> Welcome to the first part of this experiment. For this part, you are going to play a balloon inflating game. There will also be attention checks throughout to make sure you are paying attention. Your volume should be on so that you can hear the game. </p>',
+         choices: ['Press to Continue']
+        }
+        timeline.push(Welcome_screen)
+        
+
+
+
+    
+        
+
+        var Instructions = {
+         type: 'instructions',
+         pages: [
+         'In this balloon inflating game, your goal will be to earn as many points as you can. It will tak about 20 minutes.',
+         'We have pre-inflated a set of balloons for you and your job with each of these balloons is to decide whether you want to inflate that balloon once or keep the balloon its current size and move on to the next balloon.',
+         'The bigger the balloon is, the higher chance it will explode. Inflating the balloon would earn you 10 points, but if it explodes, you will earn 0 points. Keeping the balloon its current size will earn you five points. After the outcome of your decision, you will move on to a new balloon. To do well, you will have to learn how big a balloon is usually safe to inflate and at and what size it is better to take the 5 points and move on.',
+         'To choose to inflate the balloon, you will press the left arrow key on your keyboard. To move on, you will have to press the right key (there will be reminders on each trial).',
+         'Good Luck! Try to get as many points as you can.'
+        ],
+         show_clickable_nav: true
+         }
+         timeline.push(Instructions)
+
+      
+     
+ var trial_variables = [
+ 
+  {
+    "": 1,
+    "Image": "images/redBalloon.png",
+    "size": 151,
+    "PopProb": 19
+  },
+  {
+    "": 2,
+    "Image": "images/redBalloon.png",
+    "size": 152,
+    "PopProb": 20
+  },
+  {
+    "": 3,
+    "Image": "images/redBalloon.png",
+    "size": 153,
+    "PopProb": 20
+  },
+  {
+    "": 4,
+    "Image": "images/redBalloon.png",
+    "size": 154,
+    "PopProb": 21
+  },
+  {
+    "": 5,
+    "Image": "images/redBalloon.png",
+    "size": 155,
+    "PopProb": 22
+  },
+  {
+    "": 6,
+    "Image": "images/redBalloon.png",
+    "size": 156,
+    "PopProb": 23
+  },
+  {
+    "": 7,
+    "Image": "images/redBalloon.png",
+    "size": 157,
+    "PopProb": 24
+  },
+  {
+    "": 8,
+    "Image": "images/redBalloon.png",
+    "size": 158,
+    "PopProb": 25
+  },
+  {
+    "": 9,
+    "Image": "images/redBalloon.png",
+    "size": 159,
+    "PopProb": 26
+  },
+  {
+    "": 10,
+    "Image": "images/redBalloon.png",
+    "size": 160,
+    "PopProb": 27
+  },
+  {
+    "": 11,
+    "Image": "images/redBalloon.png",
+    "size": 161,
+    "PopProb": 28
+  },
+  {
+    "": 12,
+    "Image": "images/redBalloon.png",
+    "size": 162,
+    "PopProb": 29
+  },
+  {
+    "": 13,
+    "Image": "images/redBalloon.png",
+    "size": 163,
+    "PopProb": 30
+  },
+  {
+    "": 14,
+    "Image": "images/redBalloon.png",
+    "size": 164,
+    "PopProb": 31
+  },
+  {
+    "": 15,
+    "Image": "images/redBalloon.png",
+    "size": 165,
+    "PopProb": 32
+  },
+  {
+    "": 16,
+    "Image": "images/redBalloon.png",
+    "size": 166,
+    "PopProb": 34
+  },
+  {
+    "": 17,
+    "Image": "images/redBalloon.png",
+    "size": 167,
+    "PopProb": 35
+  },
+  {
+    "": 18,
+    "Image": "images/redBalloon.png",
+    "size": 168,
+    "PopProb": 36
+  },
+  {
+    "": 19,
+    "Image": "images/redBalloon.png",
+    "size": 169,
+    "PopProb": 38
+  },
+  {
+    "": 20,
+    "Image": "images/redBalloon.png",
+    "size": 170,
+    "PopProb": 39
+  },
+  {
+    "": 21,
+    "Image": "images/redBalloon.png",
+    "size": 171,
+    "PopProb": 41
+  },
+  {
+    "": 22,
+    "Image": "images/redBalloon.png",
+    "size": 172,
+    "PopProb": 42
+  },
+  {
+    "": 23,
+    "Image": "images/redBalloon.png",
+    "size": 173,
+    "PopProb": 44
+  },
+  {
+    "": 24,
+    "Image": "images/redBalloon.png",
+    "size": 174,
+    "PopProb": 46
+  },
+  {
+    "": 25,
+    "Image": "images/redBalloon.png",
+    "size": 175,
+    "PopProb": 47
+  },
+  {
+    "": 26,
+    "Image": "images/redBalloon.png",
+    "size": 176,
+    "PopProb": 49
+  },
+  {
+    "": 27,
+    "Image": "images/redBalloon.png",
+    "size": 177,
+    "PopProb": 51
+  },
+  {
+    "": 28,
+    "Image": "images/redBalloon.png",
+    "size": 178,
+    "PopProb": 53
+  },
+  {
+    "": 29,
+    "Image": "images/redBalloon.png",
+    "size": 179,
+    "PopProb": 55
+  },
+  {
+    "": 30,
+    "Image": "images/redBalloon.png",
+    "size": 180,
+    "PopProb": 57
+  },
+  {
+    "": 31,
+    "Image": "images/redBalloon.png",
+    "size": 181,
+    "PopProb": 60
+  },
+  {
+    "": 32,
+    "Image": "images/redBalloon.png",
+    "size": 182,
+    "PopProb": 62
+  },
+  {
+    "": 33,
+    "Image": "images/redBalloon.png",
+    "size": 183,
+    "PopProb": 64
+  },
+  {
+    "": 34,
+    "Image": "images/redBalloon.png",
+    "size": 184,
+    "PopProb": 67
+  },
+  {
+    "": 35,
+    "Image": "images/redBalloon.png",
+    "size": 185,
+    "PopProb": 69
+  },
+  {
+    "": 36,
+    "Image": "images/redBalloon.png",
+    "size": 186,
+    "PopProb": 72
+  },
+  {
+    "": 37,
+    "Image": "images/redBalloon.png",
+    "size": 187,
+    "PopProb": 74
+  },
+  {
+    "": 38,
+    "Image": "images/redBalloon.png",
+    "size": 188,
+    "PopProb": 77
+  },
+  {
+    "": 39,
+    "Image": "images/redBalloon.png",
+    "size": 189,
+    "PopProb": 80
+  },
+  {
+    "": 40,
+    "Image": "images/redBalloon.png",
+    "size": 190,
+    "PopProb": 83
+  },
+  {
+    "": 41,
+    "Image": "images/redBalloon.png",
+    "size": 191,
+    "PopProb": 86
+  },
+  {
+    "": 42,
+    "Image": "images/redBalloon.png",
+    "size": 192,
+    "PopProb": 90
+  },
+  {
+    "": 43,
+    "Image": "images/redBalloon.png",
+    "size": 193,
+    "PopProb": 93
+  },
+  {
+    "": 44,
+    "Image": "images/redBalloon.png",
+    "size": 194,
+    "PopProb": 96
+  },
+  {
+    "": 45,
+    "Image": "images/redBalloon.png",
+    "size": 195,
+    "PopProb": 100
+  },
+  {
+    "": 46,
+    "Image": "images/redBalloon.png",
+    "size": 196,
+    "PopProb": 103
+  },
+  {
+    "": 47,
+    "Image": "images/redBalloon.png",
+    "size": 197,
+    "PopProb": 107
+  },
+  {
+    "": 48,
+    "Image": "images/redBalloon.png",
+    "size": 198,
+    "PopProb": 111
+  },
+  {
+    "": 49,
+    "Image": "images/redBalloon.png",
+    "size": 199,
+    "PopProb": 115
+  },
+  {
+    "": 50,
+    "Image": "images/redBalloon.png",
+    "size": 200,
+    "PopProb": 119
+  },
+  {
+    "": 51,
+    "Image": "images/redBalloon.png",
+    "size": 201,
+    "PopProb": 124
+  },
+  {
+    "": 52,
+    "Image": "images/redBalloon.png",
+    "size": 202,
+    "PopProb": 128
+  },
+  {
+    "": 53,
+    "Image": "images/redBalloon.png",
+    "size": 203,
+    "PopProb": 132
+  },
+  {
+    "": 54,
+    "Image": "images/redBalloon.png",
+    "size": 204,
+    "PopProb": 137
+  },
+  {
+    "": 55,
+    "Image": "images/redBalloon.png",
+    "size": 205,
+    "PopProb": 142
+  },
+  {
+    "": 56,
+    "Image": "images/redBalloon.png",
+    "size": 206,
+    "PopProb": 147
+  },
+  {
+    "": 57,
+    "Image": "images/redBalloon.png",
+    "size": 207,
+    "PopProb": 152
+  },
+  {
+    "": 58,
+    "Image": "images/redBalloon.png",
+    "size": 208,
+    "PopProb": 157
+  },
+  {
+    "": 59,
+    "Image": "images/redBalloon.png",
+    "size": 209,
+    "PopProb": 162
+  },
+  {
+    "": 60,
+    "Image": "images/redBalloon.png",
+    "size": 210,
+    "PopProb": 168
+  },
+  {
+    "": 61,
+    "Image": "images/redBalloon.png",
+    "size": 211,
+    "PopProb": 174
+  },
+  {
+    "": 62,
+    "Image": "images/redBalloon.png",
+    "size": 212,
+    "PopProb": 180
+  },
+  {
+    "": 63,
+    "Image": "images/redBalloon.png",
+    "size": 213,
+    "PopProb": 185
+  },
+  {
+    "": 64,
+    "Image": "images/redBalloon.png",
+    "size": 214,
+    "PopProb": 192
+  },
+  {
+    "": 65,
+    "Image": "images/redBalloon.png",
+    "size": 215,
+    "PopProb": 198
+  },
+  {
+    "": 66,
+    "Image": "images/redBalloon.png",
+    "size": 216,
+    "PopProb": 204
+  },
+  {
+    "": 67,
+    "Image": "images/redBalloon.png",
+    "size": 217,
+    "PopProb": 211
+  },
+  {
+    "": 68,
+    "Image": "images/redBalloon.png",
+    "size": 218,
+    "PopProb": 218
+  },
+  {
+    "": 69,
+    "Image": "images/redBalloon.png",
+    "size": 219,
+    "PopProb": 224
+  },
+  {
+    "": 70,
+    "Image": "images/redBalloon.png",
+    "size": 220,
+    "PopProb": 232
+  },
+  {
+    "": 71,
+    "Image": "images/redBalloon.png",
+    "size": 221,
+    "PopProb": 239
+  },
+  {
+    "": 72,
+    "Image": "images/redBalloon.png",
+    "size": 222,
+    "PopProb": 246
+  },
+  {
+    "": 73,
+    "Image": "images/redBalloon.png",
+    "size": 223,
+    "PopProb": 254
+  },
+  {
+    "": 74,
+    "Image": "images/redBalloon.png",
+    "size": 224,
+    "PopProb": 261
+  },
+  {
+    "": 75,
+    "Image": "images/redBalloon.png",
+    "size": 225,
+    "PopProb": 269
+  },
+  {
+    "": 76,
+    "Image": "images/redBalloon.png",
+    "size": 226,
+    "PopProb": 277
+  },
+  {
+    "": 77,
+    "Image": "images/redBalloon.png",
+    "size": 227,
+    "PopProb": 285
+  },
+  {
+    "": 78,
+    "Image": "images/redBalloon.png",
+    "size": 228,
+    "PopProb": 293
+  },
+  {
+    "": 79,
+    "Image": "images/redBalloon.png",
+    "size": 229,
+    "PopProb": 302
+  },
+  {
+    "": 80,
+    "Image": "images/redBalloon.png",
+    "size": 230,
+    "PopProb": 310
+  },
+  {
+    "": 81,
+    "Image": "images/redBalloon.png",
+    "size": 231,
+    "PopProb": 319
+  },
+  {
+    "": 82,
+    "Image": "images/redBalloon.png",
+    "size": 232,
+    "PopProb": 327
+  },
+  {
+    "": 83,
+    "Image": "images/redBalloon.png",
+    "size": 233,
+    "PopProb": 336
+  },
+  {
+    "": 84,
+    "Image": "images/redBalloon.png",
+    "size": 234,
+    "PopProb": 345
+  },
+  {
+    "": 85,
+    "Image": "images/redBalloon.png",
+    "size": 235,
+    "PopProb": 354
+  },
+  {
+    "": 86,
+    "Image": "images/redBalloon.png",
+    "size": 236,
+    "PopProb": 364
+  },
+  {
+    "": 87,
+    "Image": "images/redBalloon.png",
+    "size": 237,
+    "PopProb": 373
+  },
+  {
+    "": 88,
+    "Image": "images/redBalloon.png",
+    "size": 238,
+    "PopProb": 382
+  },
+  {
+    "": 89,
+    "Image": "images/redBalloon.png",
+    "size": 239,
+    "PopProb": 392
+  },
+  {
+    "": 90,
+    "Image": "images/redBalloon.png",
+    "size": 240,
+    "PopProb": 401
+  },
+  {
+    "": 91,
+    "Image": "images/redBalloon.png",
+    "size": 241,
+    "PopProb": 411
+  },
+  {
+    "": 92,
+    "Image": "images/redBalloon.png",
+    "size": 242,
+    "PopProb": 421
+  },
+  {
+    "": 93,
+    "Image": "images/redBalloon.png",
+    "size": 243,
+    "PopProb": 430
+  },
+  {
+    "": 94,
+    "Image": "images/redBalloon.png",
+    "size": 244,
+    "PopProb": 440
+  },
+  {
+    "": 95,
+    "Image": "images/redBalloon.png",
+    "size": 245,
+    "PopProb": 450
+  },
+  {
+    "": 96,
+    "Image": "images/redBalloon.png",
+    "size": 246,
+    "PopProb": 460
+  },
+  {
+    "": 97,
+    "Image": "images/redBalloon.png",
+    "size": 247,
+    "PopProb": 470
+  },
+  {
+    "": 98,
+    "Image": "images/redBalloon.png",
+    "size": 248,
+    "PopProb": 480
+  },
+  {
+    "": 99,
+    "Image": "images/redBalloon.png",
+    "size": 249,
+    "PopProb": 490
+  },
+  {
+    "": 100,
+    "Image": "images/redBalloon.png",
+    "size": 250,
+    "PopProb": 500
+  },
+  {
+    "": 101,
+    "Image": "images/redBalloon.png",
+    "size": 251,
+    "PopProb": 510
+  },
+  {
+    "": 102,
+    "Image": "images/redBalloon.png",
+    "size": 252,
+    "PopProb": 520
+  },
+  {
+    "": 103,
+    "Image": "images/redBalloon.png",
+    "size": 253,
+    "PopProb": 530
+  },
+  {
+    "": 104,
+    "Image": "images/redBalloon.png",
+    "size": 254,
+    "PopProb": 540
+  },
+  {
+    "": 105,
+    "Image": "images/redBalloon.png",
+    "size": 255,
+    "PopProb": 550
+  },
+  {
+    "": 106,
+    "Image": "images/redBalloon.png",
+    "size": 256,
+    "PopProb": 560
+  },
+  {
+    "": 107,
+    "Image": "images/redBalloon.png",
+    "size": 257,
+    "PopProb": 570
+  },
+  {
+    "": 108,
+    "Image": "images/redBalloon.png",
+    "size": 258,
+    "PopProb": 579
+  },
+  {
+    "": 109,
+    "Image": "images/redBalloon.png",
+    "size": 259,
+    "PopProb": 589
+  },
+  {
+    "": 110,
+    "Image": "images/redBalloon.png",
+    "size": 260,
+    "PopProb": 599
+  },
+  {
+    "": 111,
+    "Image": "images/redBalloon.png",
+    "size": 261,
+    "PopProb": 608
+  },
+  {
+    "": 112,
+    "Image": "images/redBalloon.png",
+    "size": 262,
+    "PopProb": 618
+  },
+  {
+    "": 113,
+    "Image": "images/redBalloon.png",
+    "size": 263,
+    "PopProb": 627
+  },
+  {
+    "": 114,
+    "Image": "images/redBalloon.png",
+    "size": 264,
+    "PopProb": 636
+  },
+  {
+    "": 115,
+    "Image": "images/redBalloon.png",
+    "size": 265,
+    "PopProb": 646
+  },
+  {
+    "": 116,
+    "Image": "images/redBalloon.png",
+    "size": 266,
+    "PopProb": 655
+  },
+  {
+    "": 117,
+    "Image": "images/redBalloon.png",
+    "size": 267,
+    "PopProb": 664
+  },
+  {
+    "": 118,
+    "Image": "images/redBalloon.png",
+    "size": 268,
+    "PopProb": 673
+  },
+  {
+    "": 119,
+    "Image": "images/redBalloon.png",
+    "size": 269,
+    "PopProb": 681
+  },
+  {
+    "": 120,
+    "Image": "images/redBalloon.png",
+    "size": 270,
+    "PopProb": 690
+  },
+  {
+    "": 121,
+    "Image": "images/redBalloon.png",
+    "size": 271,
+    "PopProb": 698
+  },
+  {
+    "": 122,
+    "Image": "images/redBalloon.png",
+    "size": 272,
+    "PopProb": 707
+  },
+  {
+    "": 123,
+    "Image": "images/redBalloon.png",
+    "size": 273,
+    "PopProb": 715
+  },
+  {
+    "": 124,
+    "Image": "images/redBalloon.png",
+    "size": 274,
+    "PopProb": 723
+  },
+  {
+    "": 125,
+    "Image": "images/redBalloon.png",
+    "size": 275,
+    "PopProb": 731
+  },
+  {
+    "": 126,
+    "Image": "images/redBalloon.png",
+    "size": 276,
+    "PopProb": 739
+  },
+  {
+    "": 127,
+    "Image": "images/redBalloon.png",
+    "size": 277,
+    "PopProb": 746
+  },
+  {
+    "": 128,
+    "Image": "images/redBalloon.png",
+    "size": 278,
+    "PopProb": 754
+  },
+  {
+    "": 129,
+    "Image": "images/redBalloon.png",
+    "size": 279,
+    "PopProb": 761
+  },
+  {
+    "": 130,
+    "Image": "images/redBalloon.png",
+    "size": 280,
+    "PopProb": 768
+  },
+  {
+    "": 131,
+    "Image": "images/redBalloon.png",
+    "size": 281,
+    "PopProb": 776
+  },
+  {
+    "": 132,
+    "Image": "images/redBalloon.png",
+    "size": 282,
+    "PopProb": 782
+  },
+  {
+    "": 133,
+    "Image": "images/redBalloon.png",
+    "size": 283,
+    "PopProb": 789
+  },
+  {
+    "": 134,
+    "Image": "images/redBalloon.png",
+    "size": 284,
+    "PopProb": 796
+  },
+  {
+    "": 135,
+    "Image": "images/redBalloon.png",
+    "size": 285,
+    "PopProb": 802
+  },
+  {
+    "": 136,
+    "Image": "images/redBalloon.png",
+    "size": 286,
+    "PopProb": 808
+  },
+  {
+    "": 137,
+    "Image": "images/redBalloon.png",
+    "size": 287,
+    "PopProb": 815
+  },
+  {
+    "": 138,
+    "Image": "images/redBalloon.png",
+    "size": 288,
+    "PopProb": 820
+  },
+  {
+    "": 139,
+    "Image": "images/redBalloon.png",
+    "size": 289,
+    "PopProb": 826
+  },
+  {
+    "": 140,
+    "Image": "images/redBalloon.png",
+    "size": 290,
+    "PopProb": 832
+  },
+  {
+    "": 141,
+    "Image": "images/redBalloon.png",
+    "size": 291,
+    "PopProb": 838
+  },
+  {
+    "": 142,
+    "Image": "images/redBalloon.png",
+    "size": 292,
+    "PopProb": 843
+  },
+  {
+    "": 143,
+    "Image": "images/redBalloon.png",
+    "size": 293,
+    "PopProb": 848
+  },
+  {
+    "": 144,
+    "Image": "images/redBalloon.png",
+    "size": 294,
+    "PopProb": 853
+  },
+  {
+    "": 145,
+    "Image": "images/redBalloon.png",
+    "size": 295,
+    "PopProb": 858
+  },
+  {
+    "": 146,
+    "Image": "images/redBalloon.png",
+    "size": 296,
+    "PopProb": 863
+  },
+  {
+    "": 147,
+    "Image": "images/redBalloon.png",
+    "size": 297,
+    "PopProb": 868
+  },
+  {
+    "": 148,
+    "Image": "images/redBalloon.png",
+    "size": 298,
+    "PopProb": 872
+  },
+  {
+    "": 149,
+    "Image": "images/redBalloon.png",
+    "size": 299,
+    "PopProb": 876
+  },
+  {
+    "": 150,
+    "Image": "images/redBalloon.png",
+    "size": 300,
+    "PopProb": 881
+  },
+  {
+    "": 151,
+    "Image": "images/redBalloon.png",
+    "size": 301,
+    "PopProb": 885
+  },
+  {
+    "": 152,
+    "Image": "images/redBalloon.png",
+    "size": 302,
+    "PopProb": 889
+  },
+  {
+    "": 153,
+    "Image": "images/redBalloon.png",
+    "size": 303,
+    "PopProb": 893
+  },
+  {
+    "": 154,
+    "Image": "images/redBalloon.png",
+    "size": 304,
+    "PopProb": 897
+  },
+  {
+    "": 155,
+    "Image": "images/redBalloon.png",
+    "size": 305,
+    "PopProb": 900
+  },
+  {
+    "": 156,
+    "Image": "images/redBalloon.png",
+    "size": 306,
+    "PopProb": 904
+  },
+  {
+    "": 157,
+    "Image": "images/redBalloon.png",
+    "size": 307,
+    "PopProb": 907
+  },
+  {
+    "": 158,
+    "Image": "images/redBalloon.png",
+    "size": 308,
+    "PopProb": 910
+  },
+  {
+    "": 159,
+    "Image": "images/redBalloon.png",
+    "size": 309,
+    "PopProb": 914
+  },
+  {
+    "": 160,
+    "Image": "images/redBalloon.png",
+    "size": 310,
+    "PopProb": 917
+  },
+  {
+    "": 161,
+    "Image": "images/redBalloon.png",
+    "size": 311,
+    "PopProb": 920
+  },
+  {
+    "": 162,
+    "Image": "images/redBalloon.png",
+    "size": 312,
+    "PopProb": 923
+  },
+  {
+    "": 163,
+    "Image": "images/redBalloon.png",
+    "size": 313,
+    "PopProb": 926
+  },
+  {
+    "": 164,
+    "Image": "images/redBalloon.png",
+    "size": 314,
+    "PopProb": 928
+  },
+  {
+    "": 165,
+    "Image": "images/redBalloon.png",
+    "size": 315,
+    "PopProb": 931
+  },
+  {
+    "": 166,
+    "Image": "images/redBalloon.png",
+    "size": 316,
+    "PopProb": 933
+  },
+  {
+    "": 167,
+    "Image": "images/redBalloon.png",
+    "size": 317,
+    "PopProb": 936
+  },
+  {
+    "": 168,
+    "Image": "images/redBalloon.png",
+    "size": 318,
+    "PopProb": 938
+  },
+  {
+    "": 169,
+    "Image": "images/redBalloon.png",
+    "size": 319,
+    "PopProb": 940
+  },
+  {
+    "": 170,
+    "Image": "images/redBalloon.png",
+    "size": 320,
+    "PopProb": 943
+  },
+  {
+    "": 171,
+    "Image": "images/redBalloon.png",
+    "size": 321,
+    "PopProb": 945
+  },
+  {
+    "": 172,
+    "Image": "images/redBalloon.png",
+    "size": 322,
+    "PopProb": 947
+  },
+  {
+    "": 173,
+    "Image": "images/redBalloon.png",
+    "size": 323,
+    "PopProb": 949
+  },
+  {
+    "": 174,
+    "Image": "images/redBalloon.png",
+    "size": 324,
+    "PopProb": 951
+  },
+  {
+    "": 175,
+    "Image": "images/redBalloon.png",
+    "size": 325,
+    "PopProb": 953
+  },
+  {
+    "": 176,
+    "Image": "images/redBalloon.png",
+    "size": 326,
+    "PopProb": 954
+  },
+  {
+    "": 177,
+    "Image": "images/redBalloon.png",
+    "size": 327,
+    "PopProb": 956
+  },
+  {
+    "": 178,
+    "Image": "images/redBalloon.png",
+    "size": 328,
+    "PopProb": 958
+  },
+  {
+    "": 179,
+    "Image": "images/redBalloon.png",
+    "size": 329,
+    "PopProb": 959
+  },
+  {
+    "": 180,
+    "Image": "images/redBalloon.png",
+    "size": 330,
+    "PopProb": 961
+  },
+  {
+    "": 181,
+    "Image": "images/redBalloon.png",
+    "size": 331,
+    "PopProb": 962
+  },
+  {
+    "": 182,
+    "Image": "images/redBalloon.png",
+    "size": 332,
+    "PopProb": 964
+  },
+  {
+    "": 183,
+    "Image": "images/redBalloon.png",
+    "size": 333,
+    "PopProb": 965
+  },
+  {
+    "": 184,
+    "Image": "images/redBalloon.png",
+    "size": 334,
+    "PopProb": 966
+  },
+  {
+    "": 185,
+    "Image": "images/redBalloon.png",
+    "size": 335,
+    "PopProb": 968
+  },
+  {
+    "": 186,
+    "Image": "images/redBalloon.png",
+    "size": 336,
+    "PopProb": 969
+  },
+  {
+    "": 187,
+    "Image": "images/redBalloon.png",
+    "size": 337,
+    "PopProb": 970
+  },
+  {
+    "": 188,
+    "Image": "images/redBalloon.png",
+    "size": 338,
+    "PopProb": 971
+  },
+  {
+    "": 189,
+    "Image": "images/redBalloon.png",
+    "size": 339,
+    "PopProb": 972
+  },
+  {
+    "": 190,
+    "Image": "images/redBalloon.png",
+    "size": 340,
+    "PopProb": 973
+  },
+  {
+    "": 191,
+    "Image": "images/redBalloon.png",
+    "size": 341,
+    "PopProb": 974
+  },
+  {
+    "": 192,
+    "Image": "images/redBalloon.png",
+    "size": 342,
+    "PopProb": 975
+  },
+  {
+    "": 193,
+    "Image": "images/redBalloon.png",
+    "size": 343,
+    "PopProb": 976
+  },
+  {
+    "": 194,
+    "Image": "images/redBalloon.png",
+    "size": 344,
+    "PopProb": 977
+  },
+  {
+    "": 195,
+    "Image": "images/redBalloon.png",
+    "size": 345,
+    "PopProb": 978
+  },
+  {
+    "": 196,
+    "Image": "images/redBalloon.png",
+    "size": 346,
+    "PopProb": 979
+  },
+  {
+    "": 197,
+    "Image": "images/redBalloon.png",
+    "size": 347,
+    "PopProb": 980
+  },
+  {
+    "": 198,
+    "Image": "images/redBalloon.png",
+    "size": 348,
+    "PopProb": 980
+  },
+  {
+    "": 199,
+    "Image": "images/redBalloon.png",
+    "size": 349,
+    "PopProb": 981
+  },
+  {
+    "": 200,
+    "Image": "images/redBalloon.png",
+    "size": 350,
+    "PopProb": 982
+  },
+  {
+    "": 201,
+    "Image": "images/AttentionCheckL.png",
+    "size": 180,
+    "PopProb": 0
+  },
+  {
+    "": 202,
+    "Image": "images/AttentionCheckL.png",
+    "size": 160,
+    "PopProb": 0
+  },
+  {
+    "": 203,
+    "Image": "images/AttentionCheckL.png",
+    "size": 200,
+    "PopProb": 0
+  },
+  {
+    "": 204,
+    "Image": "images/AttentionCheckL.png",
+    "size": 180,
+    "PopProb": 0
+  },
+  {
+    "": 205,
+    "Image": "images/AttentionCheckL.png",
+    "size": 160,
+    "PopProb": 0
+  },
+  {
+    "": 206,
+    "Image": "images/AttentionCheckL.png",
+    "size": 200,
+    "PopProb": 0
+  },
+  {
+    "": 207,
+    "Image": "images/AttentionCheckR.png",
+    "size": 180,
+    "PopProb": 0
+  },
+  {
+    "": 208,
+    "Image": "images/AttentionCheckR.png",
+    "size": 160,
+    "PopProb": 0
+  },
+  {
+    "": 209,
+    "Image": "images/AttentionCheckR.png",
+    "size": 200,
+    "PopProb": 0
+  },
+  {
+    "": 210,
+    "Image": "images/AttentionCheckR.png",
+    "size": 180,
+    "PopProb": 0
+  },
+  {
+    "": 211,
+    "Image": "images/AttentionCheckR.png",
+    "size": 160,
+    "PopProb": 0
+  },
+  {
+    "": 212,
+    "Image": "images/AttentionCheckR.png",
+    "size": 200,
+    "PopProb": 0
+  }
+] 
+    
+     // trial structure
+      var balloon_trial = {
+          stimulus: jsPsych.timelineVariable('Image'),
+          type: 'image-keyboard-response',
+          /*stimulus: 'images/redBalloon.png',*/
+          stimulus_height: jsPsych.timelineVariable('size'),
+          maintain_aspect_ration: true,
+          prompt: "<p> Press The Left Arrow to inflate the balloon, press the right arrow to take the points. </p>",
+          choices: [37,39], // 37 is numeric code for left, 39 is for right arrow
+          trial_duration: null,
+          response_ends_trial: true,
+          on_finish: function(data) {
+          var rand = Math.floor(Math.random() * 1000); // random number going up to max balloon size, used against PopProb
+          data.rand = rand // saving into data file
+          //data.size = stimulus_height
+          var PopProb = jsPsych.timelineVariable('PopProb',true); // probability of balloon popping at given size, true so it can be passed through functions
+          data.PopProb = PopProb // saving into data file
+          var size = jsPsych.timelineVariable('size',true); // probability of balloon popping at given size, true so it can be passed through functions
+          data.size = size // saving into data file
+          if(data.key_press == 37){// 37 is numeric code for key left arrow
+            data.uncertain = true; // chose to pump
+                if(rand > PopProb){
+                     data.feedback = "It didn't pop! 10 points."
+                     data.popped = false
+                } if(rand <= PopProb){
+                    data.feedback = "It popped! 0 points."  
+                    data.popped = true
+                }
+          } else {
+            data.uncertain = false; //  chose to keep points
+            data.feedback = "You got 5 points."
+            data.popped = false
+          }
+         }
+        }
+       
+        // plays the bang
+        var bang = {
+            type:'audio-keyboard-response',
+            stimulus: 'bang.wav',
+            choices: jsPsych.NO_KEYS,
+            trial_ends_after_audio: true
+        }
+        
+        // conditional, makes the bang only play when balloon pops, what is actually called in timeline
+        var if_node = {
+        timeline: [bang],
+        conditional_function: function(){
+        // get the data from the previous trial,
+        // and check whether ballooon popped
+        var dat = jsPsych.data.get().last(1).values()[0];
+        if(dat.popped == true) {
+            return true;
+        } else {
+            return false;
+          }
+         }
+        }
+
+        // this displays the outcome of the trial, had to do some tricky stuff with how it handles the conditional
+         var feedback = {
+            type: 'html-keyboard-response',
+            stimulus: function(){
+            var last_trial_stimuli = jsPsych.data.get().last(1).values()[0].stimulus;
+            if(last_trial_stimuli == "bang.wav"){
+            var last_trial_feedback = "It popped! 0 points."
+            } else {
+            var last_trial_feedback = jsPsych.data.get().last(1).values()[0].feedback;
+            }
+            return last_trial_feedback
+            },
+            choices: jsPsych.NO_KEYS,
+            trial_duration: 1000
+
+         }
+
+         
+         var test_procedure = {
+           timeline:[balloon_trial, if_node, feedback],
+           timeline_variables: trial_variables,
+           randomize_order: true,
+           repetitions: 2
+         } 
+        
+         timeline.push(test_procedure)
+         
+               var survey_trial_After = {
+           type: 'survey-text',
+           questions: [{prompt: "Any comments, issues, or confusing things?"}]
+         }
+         
+          timeline.push(survey_trial_After)
+         
+         Volume_options = ["Yes","For some of it", "No"]
+         Stress_options = ["Very Stressful","Somewhat Stressful","A Little Stressful","Not Stressful at All"]
+         
+         var survey_trial_Stress = {
+           type: 'survey-multi-choice',
+           questions: [{prompt: "How stressful did you find this task?",options: Stress_options}]
+         }
+         
+          timeline.push(survey_trial_Stress)
+         
+    
+         var survey_trial_Vol = {
+           type: 'survey-multi-choice',
+           questions: [{prompt: "Did you keep the volume on during the task?",options: Volume_options}]
+         }
+         
+          timeline.push(survey_trial_Vol)
+         
+         var Debrief = {
+          type: 'html-keyboard-response',
+          stimulus:'<p>Thank you for participating in this task. Press any key to be redirected to your surveys. This may take a few moments.</p>',
+          choices: jsPsych.ALL_KEYS
+         }
+         
+         timeline.push(Debrief)
+
+         var images = ['redBalloon.png','AttentionCheckR.png','AttentionCheckL.png'];
+         let participant = jsPsych.data.urlVariables()['participant']  
+        
+         
+         jsPsych.init({
+            timeline: timeline,
+            preload_images: images,
+            use_webaudio: false,
+            exclusions: {
+              min_width: 800,
+              min_height: 600
+              },
+            on_finish: function() {
+            location.href = "https://uarizona.co1.qualtrics.com/jfe/form/SV_73a5VqalHCBr2wB?participant=" + participant;
+            }
+            }
+            
+        )
